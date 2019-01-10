@@ -7,7 +7,7 @@ target 'Movie App' do
   pod 'RxGesture'
   pod 'Alamofire'
   pod 'RxAlamofire'
+  pod 'MBProgressHUD'
   pod 'Kingfisher', '~> 4.7.0'
   pod 'SwiftMessages', '4.1.4'
-  pod 'MBProgressHUD'
 end

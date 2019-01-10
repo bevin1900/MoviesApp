@@ -15,6 +15,10 @@ func viewController(forViewModel viewModel: Any) -> UIViewController? {
         let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "rootViewController") as? RootViewController
         viewController?.viewModel = viewModel
         return viewController
+    case let viewModel as HomeViewModel:
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController
+        viewController?.viewModel = viewModel;
+        return viewController;
     default:
         return nil
     }
